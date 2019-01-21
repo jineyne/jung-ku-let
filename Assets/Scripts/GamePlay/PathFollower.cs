@@ -20,8 +20,14 @@ public class PathFollower : MonoBehaviour {
             return;
         }
 
-        float dist = Vector3.Distance(_transforms[currentPoint].position, transform.position);
-        transform.position = Vector3.MoveTowards(transform.position, _transforms[currentPoint].position, Time.deltaTime * _speed);
+        float dist = 
+            Vector3.Distance(_transforms[currentPoint].position, 
+                            transform.position);
+        transform.position = 
+            Vector3.MoveTowards(
+                    transform.position, 
+                    _transforms[currentPoint].position, 
+                    Time.deltaTime * _speed);
         if(dist <= _reachDist) {
             currentPoint++;
         }

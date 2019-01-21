@@ -12,8 +12,10 @@ public struct Rect {
 
 public static class Win32API {
     [DllImport("user32.dll", EntryPoint = "FindWindow")]
-    public static extern IntPtr FindWindow(System.String className, System.String windowName);
+    public static extern IntPtr 
+    FindWindow(System.String className, System.String windowName);
 
     [DllImport("user32.dll")]
-    public static extern bool GetWindowRect(IntPtr hwnd, ref Rect rectangle);
+    public static extern bool 
+    GetWindowRect(IntPtr hwnd, ref Rect rectangle);
 }

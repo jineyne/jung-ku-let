@@ -28,7 +28,8 @@ public class LaserType : Monster {
             mLineRenderer.SetPosition(1, end);
 
             mBoxCollider.enabled = false;
-            RaycastHit2D hit = Physics2D.Linecast(transform.position, end, _playerMask);
+            RaycastHit2D hit = 
+                Physics2D.Linecast(transform.position, end, _playerMask);
             mBoxCollider.enabled = true;
 
             if(hit.transform != null) {
