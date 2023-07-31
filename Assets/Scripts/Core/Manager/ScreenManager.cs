@@ -9,7 +9,7 @@ public class ScreenManager : Singleton<ScreenManager> {
     private Rect lastWindowRect;
 
     void Start() {
-        hWnd = Win32API.FindWindow(null, "team4");
+        hWnd = Win32API.FindWindow(null, "jineyne");
         Win32API.GetWindowRect(hWnd, ref lastWindowRect);
     }
 

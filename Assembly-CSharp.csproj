@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Core\PathFinding\Node.cs" />
      <Compile Include="Assets\Scripts\Core\Map\Cell.cs" />
      <Compile Include="Assets\Scripts\Core\Manager\SceneManager.cs" />
+     <Compile Include="Assets\Scripts\Ui\GameResultUI.cs" />
      <Compile Include="Assets\Scripts\GamePlay\Enemies\Bomb.cs" />
      <Compile Include="Assets\Scripts\Core\PathFinding\Point.cs" />
      <Compile Include="Assets\Scripts\GamePlay\PathFollower.cs" />
@@ -67,28 +68,69 @@
      <Compile Include="Assets\Scripts\GamePlay\Enemies\LaserType.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scripts\Native" />
+     <Folder Include="Assets\gui2\PNG\button\128x128" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Scripts\Core\Map" />
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\FreePixelFood" />
+     <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\FreePixelFood\Sprite\Food" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\Scripts\Core\Manager" />
+     <Folder Include="Assets\gui2\EPS" />
      <Folder Include="Assets\Scripts\Core\PathFinding" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Assets\TextMesh Pro\Resources" />
+     <Folder Include="Assets\gui2\PNG\panel" />
      <Folder Include="Assets\Tilesets" />
      <Folder Include="Assets\Palette" />
      <Folder Include="Assets\Animations" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\Scripts\Core" />
+     <Folder Include="Assets\gui2\PNG\button\256x256" />
      <Folder Include="Assets\Prefabs" />
      <None Include="Assets\FreePixelFood\ReadMe.txt" />
      <None Include="Assets\Resources\BillingMode.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\Scripts\Utilities" />
+     <Folder Include="Assets\gui2\PNG\title" />
+     <Folder Include="Assets\gui2\AI" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <Folder Include="Assets\gui2\PNG\button\64x64" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
+     <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Scripts\GamePlay\Enemies" />
+     <Folder Include="Assets\gui2\PNG\button" />
      <Folder Include="Assets\Scenes" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Assets\Sprites" />
+     <Folder Include="Assets\gui2\PNG" />
+     <Folder Include="Assets\TextMesh Pro\Documentation" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\Scripts\GamePlay" />
      <Folder Include="Assets\Scripts" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets\gui2" />
      <Folder Include="Assets\FreePixelFood\Sprite" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
      <Folder Include="Assets\Scripts\Ui" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -731,11 +773,11 @@
      <Reference Include="Unity.Mediation">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Mediation.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Analytics.DataPrivacy">
-     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityStub">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.DataPrivacy">
+     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -809,11 +851,11 @@
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>

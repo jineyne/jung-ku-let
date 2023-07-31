@@ -691,11 +691,11 @@
      <Reference Include="Unity.Mediation">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Mediation.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Analytics.DataPrivacy">
-     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityStub">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.DataPrivacy">
+     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -769,11 +769,11 @@
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing">
      <HintPath>C:\Users\jiney\jung-ku-let\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>

@@ -5,9 +5,15 @@ using UnityEngine;
 public class Player : Actor {
     private PathFollower mPathFollower;
 
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private GameObject deathUI;
+
     private void Start() {
         mPathFollower = GetComponent<PathFollower>();
         mPathFollower.OnPathFollowFinished += this.OnPathFollowFinished;
+        
+        victoryUI.SetActive(false);
+        deathUI.SetActive(false);
     }
 
     private void OnPathFollowFinished() {
@@ -17,7 +23,7 @@ public class Player : Actor {
     private void GameClear() {
         SceneManager.ESceneType nextType;
 
-        switch (SceneManager.Instance.ActiveScene) {
+        /*switch (SceneManager.Instance.ActiveScene) {
             case SceneManager.ESceneType.GameScene1:
                 nextType = SceneManager.ESceneType.GameScene2;
                 break;
@@ -40,13 +46,19 @@ public class Player : Actor {
             SceneManager.Instance.BuildScene(nextType);
         } else {
             SceneManager.Instance.BuildScene(nextType);
+        }*/
+
+        if (victoryUI)
+        {
+            victoryUI.SetActive(true);
         }
     }
 
     public void GameOver() {
-        if (mPathFollower.enabled) {
+        if (mPathFollower.enabled && deathUI) {
             mPathFollower.enabled = false;
-            StartCoroutine(GameOverCoroutine());
+            /*StartCoroutine(GameOverCoroutine());*/
+            deathUI.SetActive(true);
         }
     }
 
